@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="web_development_assisment_3.css">
+</head>
+<body>
+    <!-- Navigation section -->
+    <div class="nav_section">
+        <nav>
+            <label class="logo">Diamond🆇Fitness</label>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#bmi" class="nav-link">Calculate BMI</a></li>
+                <button><a id="button_link" href="#" class="nav-link">Call +0406487764</a></button>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Services section -->
+
+    <div class="Home" id="home">
+
+        <h1>Fitness Wonder.</h1>
+        <p style="text-align: right;">
+            Having a passion for fitness doesn't mean you have to be a professional athlete or even compete in a sport necessarily.</p>
+            <button id="home-button"><a href="#send_email">SEND EMAIL</a></button>
+        <blockquote>
+            
+        </blockquote>
+    </div>
+
+    <div class="Services" id="services">
+        <h1>GET FIT.</h1>
+        <h2>GET HEALTHY.</h2>
+        <p>Healthy movement may include walking, sports, dancing, yoga, running or other activities you enjoy.
+             Eat a well-balanced, low-fat diet with lots of fruits, vegetables and whole grains.
+             Choose a diet that's low in saturated fat and cholesterol, and moderate in sugar, salt and total fat.</p>
+
+        <h3><em>SERVICES WE OFFERED:</em></h3>
+        <ol>
+            <li> 🏋️ Weight Training</li>
+            <li> 💪 Personal Training</li>
+            <li> 🧘 Yoga</li>
+            <li> 🏃 Cardio</li>
+            <li> 🛁 Sauna</li>
+            <li> 🚲 Cross Fit</li>
+        </ol>
+    </div>
+
+    <!-- About us section -->
+
+    <div class="About_us" id="about">
+        <h1>Why Choose Diamond🆇Fitness Gym?</h1>
+        <h4>Experience a different way to workout. </h4>
+        <p>Achieving fitness goals is not easy. Knowing how to exercise, finding time to exercise, and keeping motivated are common challenges.
+             Getting yourself to the gym may feel much more overwhelming than actually working towards your goal. 
+            Diamond Fitness can help you achieve the results you want!.Joining a gym can be hugely beneficial, both physically and mentally.
+             From the moment you join, you’ll have access to all kinds of specialized equipment, classes, and resources that will help you reach your individual fitness goals.
+             Plus, it’s an excellent way to stay motivated while improving your overall health.</p>
+        <blockquote><strong>To lose weight or increase fitness levels, it’s time to try something different.</strong></blockquote>
+
+        <h2>Working Hours</h2>
+        <p>The Schedule of our GYM is displayed below:</p>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>12:00 - 20:00</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>12:00 - 20:00</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>12:00 - 20:00</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>12:00 - 20:00</td>
+            </tr>	
+            <tr>
+                <td>Friday</td>
+                <td>15:00pm - 21:00</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>10:00am - 20:00</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>Closed</td>
+            </tr>	
+        </table>
+
+    </div>
+
+    <!-- BMI calculating section -->
+
+    <div class="BMI" id="bmi">
+        <h1>Body Mass Index Calculation</h1>
+        <form>
+            <label for="weight">Weight (in kilograms):</label>
+            <input type="number" id="weight" name="weight" required>
+          
+            <label for="height">Height (in meters):</label>
+            <input type="number" id="height" name="height" step="0.01" required>
+            <button type="submit">Calculate BMI</button>
+          </form>
+          
+          <div id="result-box"></div>
+    </div>
+
+    <!-- Contact Us section -->
+    <div class="Contact" id="contact">
+        <p>We will try to delivery you the best outcome so if you have any queries be sure to contact us using following information.</p>
+        <form id="email-form" action="" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required></br>
+          
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required></br>
+          
+            <label for="recipient-email">Recipient's Email:</label>
+            <input type="email" id="recipient-email" name="recipient-email" required></br>
+          
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required></br>
+          
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="10" cols="100"  required></textarea></br>
+          
+            <button type="submit" onclick="sendEmail()">Send Email</button>
+          </form>
+
+
+        <footer style="margin-top: 20px;">
+            <p><strong>Address</strong>: 2155-Pheonix Ave, Ponds, NSW, Australia</p>
+            <p><strong>PhoneNumber</strong>: <em>0406378764</em><br>
+            <a href="timalsina230@gmail.com"><em>DiamondGym30@gmail.com</em></a></p>
+        </footer>
+    </div>
+
+
+
+
+    <script>
+
+         /* This script includes two functionalities*/
+        /* BMI calculation */
+
+        const form = document.querySelector('form');
+        const resultBox = document.querySelector('#result-box');
+        
+        form.addEventListener('submit', (event) => {
+          event.preventDefault();
+        
+          const weight = parseFloat(document.querySelector('#weight').value);
+          const height = parseFloat(document.querySelector('#height').value);
+        
+          const bmi = weight / (height * height);
+          const bmiFormatted = parseFloat(bmi);
+        
+          resultBox.innerHTML = `<p>Your BMI is: <strong>${bmiFormatted}</strong></p>`;
+        });
+
+        /* Sending an email */
+    
+        function sendEmail() {
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const recipientEmail = document.getElementById("recipient-email").value;
+            const subject = document.getElementById("subject").value;
+            const message = document.getElementById("message").value;
+          
+            Email.send({
+              SecureToken: "YourSecureTokenHere",
+              From: email,
+              To: recipientEmail,
+              Subject: subject,
+              Body: `Name: ${name} <br>
+                     Email: ${email} <br>
+                     Message: ${message}`,
+            }).then(function (message) {
+              alert("Email sent successfully!");
+            });
+          }
+
+      
+          
+    </script>
+</body>
+</html>

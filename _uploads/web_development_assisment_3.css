@@ -1,0 +1,532 @@
+/* First Part for Mobile Responsiveness */
+
+/* Enable Smooth Scrolling */
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* Default Styles */
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* Body font and backgroud color */
+
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: whitesmoke;
+}
+
+/* Navigation Styles */
+
+
+nav{
+  background-color: black;
+  height: 80px;
+  width: 100%;
+}
+
+/* Navbar logo style */
+
+label.logo{
+  padding: 0 10px ;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  line-height: 70px;
+  text-shadow: 2px;
+}
+
+nav ul{
+  float: right;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 70px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: black;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Style for navbar item links on hover and active state */
+
+nav ul li a:active, a:hover{
+  background-color: white;
+  color: black;
+  transition:cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+nav button{
+  background-color: #0088a9;
+  padding: 6px 15px;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.4s ease 0s;
+  float: right;
+  margin-top: 16px;
+  margin-left: 10px;
+  display: none;
+}
+
+#button_link:hover{
+  background-color: #0088a9;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+#button_link:hover{
+  background-color: #0088a9;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Home Section Styles */
+
+/* Style for home section */
+
+.Home{
+  font-size: 12px;
+  color: white;
+  background-color: cadetblue;
+  background-image: url('image/gym_photo.webp');
+  margin: 50px 0px;
+  height: fit-content;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Button style in home section */
+
+.Home button{
+  float: right;
+  background-color: #f44336;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+p{
+  margin: 20px 5px;
+}
+
+h1{
+  text-align: right;
+  color: greenyellow;
+}
+
+/* Style for services section */
+
+.Services{
+  height: fit-content;
+  color: white;
+  font-size: 12px;
+  text-orientation: sideways-right;
+  margin: 100px 0px;
+  background-color: #0088a9;
+}
+
+h2{
+  text-align: right;
+  color: yellow;
+}
+
+.Services h3{
+  margin-top: 50px;
+  text-align: right;
+  color: coral;
+}
+
+.Services li{
+  color: white;
+  text-align: right ;
+  display: block;
+  font-size: 12px;
+  padding: 0px;
+  margin: 5px 0px;
+}
+
+/* Styles for About us section */
+
+.About_us{
+  font-size: 12px;
+  height: fit-content;
+  margin: 100px 0px;
+  background-color: black;
+}
+
+/* Table styles in about us section */
+
+table {
+  padding: 5px;
+  width: 100%;
+}
+
+th,td{
+  color: white;
+  border: 1.5px solid white;
+  text-align: left;
+  padding: 20px;
+}
+
+h4{
+  text-align: right;
+  color: white;
+}
+
+.About_us p{
+  color: white;
+}
+
+.About_us blockquote{
+  color: white;
+}
+
+/* Styles for BMI section */
+
+.BMI{
+  margin: 100px 0;
+  height: fit-content;
+  width: 100%;
+  height:max-content;
+  background-color: black;
+  color: whitesmoke;
+}
+
+/* BMI form styling */
+
+.BMI form{
+  margin: 5px 0px;
+  padding: 0px;
+  align-items: center;
+}
+
+.BMI input{
+
+  width: 100%;
+}
+
+.BMI button{background-color: paleturquoise;
+
+  padding: 6px 15px; border: none;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.4s ease Os;
+  margin: 15px;
+  display: block;
+  float: right;
+}
+
+/* Style for Contact Us section */
+
+.Contact{
+  margin: 100px 0px;
+  color: black;
+}
+
+.Contact a{
+  color: black;
+}
+
+.Contact strong{
+  color: green;
+}
+
+.Contact form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.Contact label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.Contact input,textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.Contact button {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.Contact button:hover {
+  background-color: #e53935;
+}
+
+
+/* Using media key for desktop responsive style*/
+
+@media only screen and (min-width: 768px) {
+
+/* Style for Navigation Bar */
+
+nav{
+  background-color: black;
+  height: 80px;
+  width: 100%;
+}
+
+label.logo{
+  padding: 0 80px;
+  color: white;
+  font-size: 35px;
+  font-weight: bolder;
+  line-height: 70px;
+  text-shadow: 2px;
+}
+
+nav ul{
+  float: right;
+  margin-right: 30px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 70px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+nav ul li a:active, a:hover{
+  background-color: white;
+  color: black;
+  transition:cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+nav button{
+  background-color: #0088a9;
+  padding: 6px 15px;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.4s ease 0s;
+  float: right;
+  margin-top: 16px;
+  margin-left: 10px;
+}
+
+#button_link:hover{
+  background-color: #0088a9;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+#button_link:hover{
+  background-color: #0088a9;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Home{
+  font-size: 20px;
+  color: white;
+  background-color: cadetblue;
+  background-image: url('image/gym_photo.webp');
+  margin: 100px 60px;
+  height: 400px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.Home button{
+  float: right;
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+p{
+  margin: 20px 5px;
+}
+
+h1{
+  text-align: right;
+  color: greenyellow;
+}
+
+/* Style For Services Section */
+
+.Services{
+  color: white;
+  font-size: 20px;
+  text-orientation: sideways-right;
+  margin: 300px 60px;
+  background-color: #0088a9;
+}
+
+h2{
+  text-align: right;
+  color: yellow;
+}
+
+.Services h3{
+  margin-top: 50px;
+  text-align: right;
+  color: coral;
+}
+
+.Services li{
+  color: white;
+  text-align: right ;
+  float: none;
+  list-style-type: disc;
+  display: block;
+  text-decoration: dotted;
+  font-size: 14px;
+  padding: 5px;
+  margin: 0px;
+}
+
+/* Style for Aboutus section */
+
+.About_us{
+  height: 800px;
+  margin: 300px 60px;
+  background-color: black;
+}
+
+table {
+  padding: 5px;
+  float: right;
+  display: block;
+  float: right;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+th,td{
+  color: white;
+  border: 1.5px solid white;
+  text-align: left;
+  padding: 20px;
+}
+
+h4{
+  text-align: right;
+  color: white;
+}
+
+.About_us p{
+  color: white;
+}
+
+.About_us blockquote{
+  color: white;
+}
+
+
+/* Style for BMI section */
+.BMI{
+  height: fit-content;
+  background-color: black;
+  color: whitesmoke;
+}
+
+.BMI form{
+  margin: 40px;
+  padding: 20px;
+}
+
+.BMI button{background-color: paleturquoise;
+
+  padding: 6px 15px; border: none;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.4s ease Os;
+  margin: 0;
+  display: block;
+  margin-right: 800px;
+  float: right;
+}
+
+/* Style for Contact us section */
+
+.Contact{
+  margin: 300px 60px;
+  color: black;
+}
+
+.Contact a{
+  color: black;
+}
+
+.Contact strong{
+  color: green;
+}
+
+.Contact form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.Contact label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.Contact input,textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.Contact button {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.Contact button:hover {
+  background-color: #e53935;
+}
+
+}
